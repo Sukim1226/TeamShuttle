@@ -36,9 +36,8 @@ int main(){
 	
 	for(int i = 1; i<=n; i++)
 		for(int j = 1; j<=m; j++)
-			if(arr[i - 1][j] == 0 && arr[i][j - 1] == 0){
+			if(arr[i - 1][j] == 0 && arr[i][j - 1] == 0 && arr[i - 1][j - 1] == 0)
 				arr[i][j] = 0;
-			}
 			
 	arr[0][1] = arr[1][0] = 0;
 	
@@ -50,7 +49,7 @@ int main(){
 					dp[i][j] = 0;
 		}
 		
-	/*
+	
 	printf("\n");
 	for(int i = 1; i<=n; i++){
 		for(int j = 1; j<=m; j++)
@@ -64,7 +63,7 @@ int main(){
 			printf("%d ", dp[i][j]);
 		printf("\n");
 	}
-	*/
+	
 
 	printf("%d", dp[n][m]);
 	return 0;
