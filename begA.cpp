@@ -1,4 +1,4 @@
-//too easy
+//Too easy
 //long long matter
 #include <stdio.h>
 int main(void) {
