@@ -49,7 +49,7 @@ int main(){
 				dp[i][j] = 0;
 			else{
 				if(!arr[i - 1][j] && !arr[i][j - 1])
-					dp[i][j] = arr[i - 1][j - 1] + arr[i][j];
+					dp[i][j] = dp[i - 1][j - 1] + arr[i][j];
 				else
 					dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]) + arr[i][j];
 			}
