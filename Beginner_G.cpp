@@ -54,7 +54,7 @@ int main(){
 		}
 	}
 	for(int i = 0; i<cnt; i++){
-		printf("%d\n", PARTS[i]);
+		//printf("%d\n", PARTS[i]);
 		MAX  = max(PARTS[i], MAX);
 	}
 	if(MAX >= 0)
